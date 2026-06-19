@@ -4,10 +4,6 @@ The sandbox provides a browser-like environment. Common web APIs such as fetch, 
 
 However, this is not a full browser or Node.js environment. Some features are limited or unavailable. See below for exact behavior and differences.
 
-:::warning Timers are blocking
-`setTimeout` and `setInterval` are synchronous and block execution while waiting. The sandbox does not provide a real browser event loop.
-:::
-
 :::info Synchronous requests
 A blocking `fetchSync()` helper is also available for environments where async flows are inconvenient.
 :::
