@@ -24,6 +24,7 @@ export default defineConfig({
         items: [
           { text: 'Introduction', link: '/guide/introduction' },
           { text: 'Upcoming features ', link: '/guide/upcoming' },
+          { text: 'Compatibility layers ', link: '/guide/compatibility' },
           { text: 'FAQ', link: '/guide/faq' },
         ]
       },

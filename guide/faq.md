@@ -5,6 +5,11 @@ Frequently Asked Questions.
 hoshi is still in early development.  
 Some features may be incomplete, buggy, or subject to change as the project evolves.
 
+## Are all features the same on every platform?
+Most of the app works identically everywhere, but a couple of things are desktop-only for now.
+
+On desktop, everything is fully supported. On the other hand, on Android, Discord Rich Presence isn't available, and MPV support is limited, there's no way for the app to talk back and forth with the player on Android, so things like automatically marking an episode as watched when you finish it don't work there.
+
 ## How does the extension system work?
 Extensions allow hoshi to connect to external content sources.
 
