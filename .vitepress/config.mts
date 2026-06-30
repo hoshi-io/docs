@@ -47,7 +47,7 @@ export default defineConfig({
       }
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/dot-fx/hoshi' },
+      { icon: 'github', link: 'https://github.com/hoshi-io/hoshi' },
     ]
   }
 })

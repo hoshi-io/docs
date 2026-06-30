@@ -1,8 +1,14 @@
 <template>
-  <div :class="{ 'is-landing': frontmatter.customLayout === 'landing' }">
+  <div :class="{ 'is-custom': frontmatter.customLayout === 'landing' || frontmatter.customLayout === 'privacy' }">
+
     <div v-if="frontmatter.customLayout === 'landing'">
       <landing />
     </div>
+
+    <div v-else-if="frontmatter.customLayout === 'privacy'">
+      <privacy />
+    </div>
+
     <DefaultTheme.Layout v-else />
   </div>
 </template>
@@ -10,23 +16,21 @@
 <script setup>
 import { useData } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import MyLanding from '../components/landing.vue'
 
 const { frontmatter } = useData()
 </script>
 
 <style>
-.is-landing .VPContent {
+.is-custom .VPContent {
   padding: 0 !important;
   width: 100% !important;
   max-width: 100% !important;
 }
 
-.is-landing .VPDoc {
+.is-custom .VPDoc {
   padding: 0 !important;
   margin: 0 !important;
 }
-
 
 body, html {
   margin: 0 !important;

@@ -1,0 +1,5 @@
+---
+customLayout: privacy
+---
+
+<privacy />
