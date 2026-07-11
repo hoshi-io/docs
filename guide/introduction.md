@@ -2,7 +2,7 @@
 
 Hoshi is a modern multi-tracker app designed to keep all your manga, anime, and novel progress in one place.
 
-It integrates with platforms like AniList, MyAnimeList, and Kitsu, allowing you to manage your library and sync your progress across services.
+It integrates with platforms like AniList, MyAnimeList, Simkl and Kitsu, allowing you to manage your library and sync your progress across services.
 
 For common questions, limitations, and known issues, see the [FAQ](/guide/faq).
 

@@ -56,7 +56,7 @@
 
         <div class="hero-visual">
           <div class="character-wrapper">
-            <img src="/hoshi.webp" class="character-slot" alt="Hoshi">
+            <img src="/hoshi.png" class="character-slot" alt="Hoshi">
           </div>
         </div>
       </div>
