@@ -104,10 +104,18 @@
             <span>macOS</span>
           </a>
 
-          <a :href="getDownloadLink('arm64')" target="_blank" class="platform">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.3414C17.523 15.8252 17.1306 16.2176 16.6468 16.2176C16.1629 16.2176 15.7705 15.8252 15.7705 15.3414C15.7705 14.8576 16.1629 14.4652 16.6468 14.4652C17.1306 14.4652 17.523 14.8576 17.523 15.3414ZM7.4475 16.2176C6.96365 16.2176 6.57127 15.8252 6.57127 15.3414C6.57127 14.8576 6.96365 14.4652 7.4475 14.4652C7.93134 14.4652 8.32371 14.8576 8.32371 15.3414C8.32371 15.8252 7.93134 16.2176 7.4475 16.2176ZM18.064 11.2384L19.9882 7.90483C20.0631 7.77353 20.02 7.6048 19.8887 7.52994C19.7574 7.45507 19.5887 7.49818 19.5138 7.62948L17.558 11.0182C15.9189 10.2662 14.0326 9.82776 12.0468 9.82776C10.0611 9.82776 8.17482 10.2662 6.5357 11.0182L4.57991 7.62948C4.50504 7.49818 4.3363 7.45507 4.20501 7.52994C4.07371 7.6048 4.0306 7.77353 4.10546 7.90483L6.02967 11.2384C2.66311 13.0827 0.380859 16.5912 0.0531201 20.7303H24.0405C23.7128 16.5912 21.4305 13.0827 18.064 11.2384Z"/></svg>
-            <span>Android</span>
-          </a>
+          <div class="platform platform-android">
+            <a href="https://play.google.com/store/apps/details?id=com.ninelfx.hoshi" target="_blank" rel="noopener" class="platform-main">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.523 15.3414C17.523 15.8252 17.1306 16.2176 16.6468 16.2176C16.1629 16.2176 15.7705 15.8252 15.7705 15.3414C15.7705 14.8576 16.1629 14.4652 16.6468 14.4652C17.1306 14.4652 17.523 14.8576 17.523 15.3414ZM7.4475 16.2176C6.96365 16.2176 6.57127 15.8252 6.57127 15.3414C6.57127 14.8576 6.96365 14.4652 6.4475 14.4652C7.93134 14.4652 8.32371 14.8576 8.32371 15.3414C8.32371 15.8252 7.93134 16.2176 7.4475 16.2176ZM18.064 11.2384L19.9882 7.90483C20.0631 7.77353 20.02 7.6048 19.8887 7.52994C19.7574 7.45507 19.5887 7.49818 19.5138 7.62948L17.558 11.0182C15.9189 10.2662 14.0326 9.82776 12.0468 9.82776C10.0611 9.82776 8.17482 10.2662 6.5357 11.0182L4.57991 7.62948C4.50504 7.49818 4.3363 7.45507 4.20501 7.52994C4.07371 7.6048 4.0306 7.77353 4.10546 7.90483L6.02967 11.2384C2.66311 13.0827 0.380859 16.5912 0.0531201 20.7303H24.0405C23.7128 16.5912 21.4305 13.0827 18.064 11.2384Z"/>
+              </svg>
+              <span>Google Play</span>
+            </a>
+
+            <a :href="getDownloadLink('arm64')" target="_blank" class="apk-link">
+              or download APK directly
+            </a>
+          </div>
 
           <a href="https://aur.archlinux.org/packages/hoshi-bin" target="_blank" class="platform platform-aur">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .113l-11.51 19.6a.6.6 0 0 0 .51.9h22a.6.6 0 0 0 .51-.9L12 .113zm0 3.86l8.4 14.29H3.6L12 3.973zm0 3.86a.6.6 0 0 0-.51.3l-5.12 8.71a.6.6 0 0 0 .51.9h10.24a.6.6 0 0 0 .51-.9l-5.12-8.71a.6.6 0 0 0-.51-.3z"/></svg>
@@ -594,6 +602,33 @@ html {
 
 .hero-tagline {
   text-wrap: balance;
+}
+
+.platform-android {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.platform-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: #d4d4d8 !important;
+}
+
+.apk-link {
+  font-size: 0.75rem;
+  color: #a1a1aa !important;
+  text-decoration: underline !important;
+  transition: color 0.2s ease;
+}
+
+.apk-link:hover {
+  color: #a78bfa !important;
 }
 
 @media (max-width: 900px) {
