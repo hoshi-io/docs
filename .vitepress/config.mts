@@ -40,7 +40,8 @@ export default defineConfig({
               { text: 'Common', link: '/extensions/types/common' },
               { text: 'Anime', link: '/extensions/types/anime' },
               { text: 'Manga', link: '/extensions/types/manga' },
-              { text: 'Novel', link: '/extensions/types/novel' }
+              { text: 'Novel', link: '/extensions/types/novel' },
+              { text: 'Torrent', link: '/extensions/types/torrent' }
             ]
           }
         ]

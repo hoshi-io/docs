@@ -1,6 +1,6 @@
 # Base Extension
 
-All extensions types share these methods:
+Anime, manga and novel extension types share these methods:
 
 ```js
 class MyExtension extends Anime {

@@ -47,7 +47,7 @@ All content is accessed online through supported platforms or user-installed ext
 :::
 
 ::: info Notes
-- Local file support is currently not available
+- It is not intended to add a feature to manage a local library
 - Extensions are optional and maintained by users
 - The custom reader and player may still have bugs or inconsistencies
   :::

@@ -8,7 +8,7 @@ Some features may be incomplete, buggy, or subject to change as the project evol
 ## Are all features the same on every platform?
 Most of the app works identically everywhere, but a couple of things are desktop-only for now.
 
-On desktop, everything is fully supported. On the other hand, on Android, Discord Rich Presence isn't available, and MPV support is limited, there's no way for the app to talk back and forth with the player on Android, so things like automatically marking an episode as watched when you finish it don't work there.
+On desktop, everything is fully supported. On the other hand, on Android, Discord Rich Presence isn't available.
 
 ## How does the extension system work?
 Extensions allow hoshi to connect to external content sources.
@@ -18,6 +18,8 @@ They act as plugins that can:
 - Add entirely new content that isn’t available on trackers (e.g. doujinshi)
 
 This gives you flexibility in where your media comes from while keeping the core app lightweight.
+
+Torrent extensions just give episode sources for anime content, they cant add content to the app. 
 
 ## Are extensions safe to run?
 Extensions run in a sandboxed environment and are isolated from the core app to reduce risk.
@@ -29,13 +31,8 @@ All non-English translations are AI-generated.
 
 They may include mistakes or awkward phrasing. If accuracy matters, use the English version when available.
 
-## Why did the anime player get stuck?
-If the player appears to load indefinitely, try reopening the player. This will be fixed in future updates.
-
 ## Why doesn’t the Chinese title option apply everywhere?
-This is a current limitation.
-
-Some parts of the app don’t yet respect the selected title language (currently affects Chinese). Future updates will improve consistency.
+This is a current limitation, but now should be applied everywhere but on search results.
 
 ## Does my data sync across devices?
 No, hoshi does not provide built-in cross-device syncing for local data.

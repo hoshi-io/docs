@@ -12,7 +12,7 @@ author: Your Name
 icon: https://website.com/favicon.ico
 
 main: index.js
-type: anime                       # anime | manga | novel
+type: anime                       # anime | manga | novel | torrent
 
 language: en
 nsfw: false
