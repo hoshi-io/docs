@@ -1,17 +1,8 @@
 # Upcoming Features
 
-The app is mostly complete, but there are still a few things I want to improve and expand over time.
+Hoshi is mostly feature-complete, so don't expect big new features for now.
 
-## UI Improvements
+The main thing I'm looking into is improving performance on Linux, where the system webview is noticeably slower than on other platforms. The options I'm weighing are:
 
-Improving the overall look and feel of the app with small qol changes, cleaner layouts, and a smoother experience across the app.
-
-## More Tracker Support
-
-Adding support for more external tracking services. Simkl and Shikimori are currently planned.
-
-## Better auto matching on torrent
-
-## IOS Support
-
-I would like to add IOS support, I can't add it because I don't currently own a mac, I would just need it to test small per OS features.
+- **Waiting for CEF in Tauri:** Tauri v3 is expected to support CEF (Chromium) as a webview, which would replace the slow system webview once it's stable.
+- **A native desktop UI:** rebuilding the desktop interface with a native UI toolkit instead of a webview.

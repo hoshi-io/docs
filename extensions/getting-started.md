@@ -4,21 +4,28 @@ Extensions allow you to add new content sources to the app for players and reade
 
 ## Start Coding
 
-Hoshi currently supports three extension types:
+Hoshi currently supports four extension types:
 
 - [Anime](./types/anime)
 - [Manga](./types/manga)
 - [Novel](./types/novel)
+- [Torrent](./types/torrent)
 
-All extension types share a common base API. See [Common](./types/common) for shared behavior and utilities.
+Anime, manga and novel extensions share a common base API. See [Common](./types/common) for shared behavior and utilities.
 
 Extensions are written in JavaScript, but run inside a sandboxed environment with a limited API (not full Node.js or browser APIs).
 
 Check the [Sandbox APIs](./sandbox) to see what is available inside Hoshi’s sandbox.
 
+## Extension IDE
+
+On desktop, the code icon in the sidebar opens the **Extension IDE**. From there you can create a new extension from a starter template, edit its code, call any of its functions with your own parameters and see the result and console output right away.
+
+Extensions created in the IDE are saved in the `extensions` directory with a `-dev` suffix in their id.
+
 ## Installing & Debugging
 
-To install an extension, place it inside the app’s `extensions` directory.
+To install an extension manually, place it inside the app’s `extensions` directory.
 
 The base directory is resolved using Tauri:
 `app.path().app_data_dir()`
@@ -26,13 +33,13 @@ The base directory is resolved using Tauri:
 Typical locations per OS:
 
 - **Windows:**  
-  `C:\Users\<username>\AppData\Roaming\com.dot-fx.hoshi\extensions`
+  `C:\Users\<username>\AppData\Roaming\com.ninelfx.hoshi\extensions`
 
 - **Linux:**  
-  `/home/<username>/.local/share/com.dot-fx.hoshi/extensions`
+  `/home/<username>/.local/share/com.ninelfx.hoshi/extensions`
 
 - **macOS:**  
-  `/Users/<username>/Library/Application Support/com.dot-fx.hoshi/extensions`
+  `/Users/<username>/Library/Application Support/com.ninelfx.hoshi/extensions`
 
 ::: info
 On Android, the app data directory also exists but is not directly accessible due to system sandboxing. Extensions must be installed using in-app methods instead of manually placing files.
@@ -51,6 +58,8 @@ You can use `console.log` normally.
 
 Logs are available inside the app:
 **Settings → Logs**
+
+When you run a function from the Extension IDE, its console output is also shown there.
 
 ## Marketplace & Sharing
 
